@@ -8,7 +8,9 @@
 
 html,
 body {
-  height: 100%;
+  height: 800px;
+  width: 900px;
+  background: #d0dad7;
 }
 
 .grid {
@@ -27,46 +29,298 @@ body {
 }
 
 .col-1-4 {
-  width: 25%;
-  height: 25%;
+  width: 225px;
+  height: 225px;
   background: #333;
-  border: 1px solid #999;
-}
-
-.triangle-up {
-  width: 25%;
-  height: 0;
-  padding-left: 25%;
-  padding-bottom: 25%;
   overflow: hidden;
 }
 
-.triangle-up:after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  margin-left: -500px;
-  border-left: 500px solid transparent;
-  border-right: 500px solid transparent;
-  border-bottom: 500px solid #4679BD;
-}
-
-/* Opt-in outside padding */
-
-h1 {
-  color: white;
-}
-
-h1 em {
-  color: #666;
-  font-size: 16px;
+.module {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform: rotate(45deg);
 }
 
 .square {
-  width: 0;
-  height: 0;
-  border: 100px solid #1F80AF;
-  border-left-color: #0099CC;
-  border-right-color: #0099CC;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.square.top {
+  left: -50%;
+  top: -50%;
+}
+
+.square.right {
+  top: -50%;
+  right: -50%;
+}
+
+.square.bottom {
+  right: -50%;
+  bottom: -50%;
+}
+
+.square.left {
+  left: -50%;
+  bottom: -50%;
+}
+
+.first .top {
+  background: #c9d3cf;
+}
+
+.first .right {
+  background: #d7e2de;
+}
+
+.first .bottom {
+  background: black;
+}
+
+.first .left {
+  background: #c9d3cf;
+}
+
+.second .top {
+  background: #c9d3cf;
+}
+
+.second .right {
+  background: black;
+}
+
+.second .bottom {
+  background: #c9d3cf;
+}
+
+.second .left {
+  background: #d7e2de;
+}
+
+.third .top {
+  background: black;
+}
+
+.third .right {
+  background: #c9d3cf;
+}
+
+.third .bottom {
+  background: #d7e2de;
+}
+
+.third .left {
+  background: #c9d3cf;
+}
+
+.fourth .top {
+  background: #c9d3cf;
+}
+
+.fourth .right {
+  background: #d0dad7;
+}
+
+.fourth .bottom {
+  background: #c9d3cf;
+}
+
+.fourth .left {
+  background: #d0dad7;
+}
+
+.fifth .top {
+  background: #c9d3cf;
+}
+
+.fifth .right {
+  background: #d0dad7;
+}
+
+.fifth .bottom {
+  background: black;
+}
+
+.fifth .left {
+  background: #d7e2de;
+}
+
+.sixth .top {
+  background: #d0dad7;
+}
+
+.sixth .right {
+  background: #c9d3cf;
+}
+
+.sixth .bottom {
+  background: #d0dad7;
+}
+
+.sixth .left {
+  background: black;
+}
+
+.seventh .top {
+  background: #c9d3cf;
+}
+
+.seventh .right {
+  background: #d7e2de;
+}
+
+.seventh .bottom {
+  background: black;
+}
+
+.seventh .left {
+  background: #d7e2de;
+}
+
+.eight .top {
+  background: black;
+}
+
+.eight .right {
+  background: #d7e2de;
+}
+
+.eight .bottom {
+  background: #d0dad7;
+}
+
+.eight .left {
+  background: #c9d3cf;
+}
+
+.ninth .top {
+  background: #c9d3cf;
+}
+
+.ninth .right {
+  background: #d7e2de;
+}
+
+.ninth .bottom {
+  background: #c9d3cf;
+}
+
+.ninth .left {
+  background: black;
+}
+
+.tenth .top {
+  background: black;
+}
+
+.tenth .right {
+  background: #d7e2de;
+}
+
+.tenth .bottom {
+  background: #c9d3cf;
+}
+
+.tenth .left {
+  background: #d0dad7;
+}
+
+.eleventh .top {
+  background: #d7e2de;
+}
+
+.eleventh .right {
+  background: #c9d3cf;
+}
+
+.eleventh .bottom {
+  background: #c9d3cf;
+}
+
+.eleventh .left {
+  background: black;
+}
+
+.twelfth .top {
+  background: #d7e2de;
+}
+
+.twelfth .right {
+  background: black;
+}
+
+.twelfth .bottom {
+  background: #d7e2de;
+}
+
+.twelfth .left {
+  background: #c9d3cf;
+}
+
+.thirteenth .top {
+  background: black;
+}
+
+.thirteenth .right {
+  background: #d7e2de;
+}
+
+.thirteenth .bottom {
+  background: #d7e2de;
+}
+
+.thirteenth .left {
+  background: #c9d3cf;
+}
+
+.fourteenth .top {
+  background: #d0dad7;
+}
+
+.fourteenth .right {
+  background: #c9d3cf;
+}
+
+.fourteenth .bottom {
+  background: black;
+}
+
+.fourteenth .left {
+  background: #c9d3cf;
+}
+
+.fifteenth .top {
+  background: #d7e2de;
+}
+
+.fifteenth .right {
+  background: black;
+}
+
+.fifteenth .bottom {
+  background: #d0dad7;
+}
+
+.fifteenth .left {
+  background: #c9d3cf;
+}
+
+.sixteenth .top {
+  background: black;
+}
+
+.sixteenth .right {
+  background: #d0dad7;
+}
+
+.sixteenth .bottom {
+  background: #c9d3cf;
+}
+
+.sixteenth .left {
+  background: #d7e2de;
 }
